@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish in a Flash</title>
+    <meta name="title" content="Fish in a Flash">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit">
+    <!-- FAVICON ICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#c0ca67">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Lato', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Catamaran', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <!-- font-family: 'Pinyon Script', cursive; -->
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../src/assets/vendors/bootstrap/css/bootstrap.min.css" defer />
+    <link rel="stylesheet" href="../src/assets/vendors/fontawesome/css/all.min.css" defer />
+    <link rel="stylesheet" href="../src/assets/vendors/owl-carousel/css/owl.carousel.min.css" defer />
+    <link rel="stylesheet" href="../src/assets/css/common.css" defer />
+</head>
+<body>
+  <header class="fixed-top bg-white">
+    <!-- Mobile Menu -->
+    <div class="offcanvas-lg offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptions">
+        <!-- <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-label="Close"></button>
+        </div> -->
+        <div class="offcanvas-body d-block d-lg-none">
+          <ul class="navbar-nav d-flex flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order Now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../src/menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Join Wait List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find Restaurant</a>
+            </li>
+            <hr/>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Specials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Catering</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Join Eclub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gift Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <hr/>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Create an Account</a>
+            </li>
+            <li class="nav-item login-link">
+              <a class="nav-link" href="#">sign In</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <button class="hamberger-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+          <span class="hamberger-icon">
+          </span>
+        </button>
+        <a class="navbar-brand" href="../src/index.html"><img src="./assets/images/logo.svg" alt=""/></a>
+        <ul class="navbar-nav d-lg-flex flex-row me-auto d-none">
+          <li class="nav-item">
+            <a class="nav-link" href="../src/menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Order Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Join Wait List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-lg-flex flex-row d-none">
+          <li class="nav-item">
+            <div class="menu-location">
+              <a href="#" class="text-decoration-underline">NYC - TIMES SQUARE</a>
+              <p>(212) 333-3254</p>
+              <a href="#" class="">CHANGE LOCATION</a>
+            </div>
+          </li>
+          <li class="nav-item login-link">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+        <div class="cart-block d-flex">
+          <a href="#" class="location-icon d-block d-lg-none me-3"><i class="fa-solid fa-location-dot"></i></a>
+          <a href="#collapseCart" class="cart-icon" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseCart"><i class="fa-solid fa-bag-shopping"></i></a>
+          <div class="collapse cart-body" id="collapseCart">
+            <div class="">
+              <!-- <span id="cartClose" class="text-dark text-end"><i class="fa-solid fa-xmark"></i></span> -->
+              <h3 class="mb-3">Your cart is empty</h3>
+              <p class="mb-3">What type of order would you like to start?</p>
+              <a href="#" class="btn btn-primary btn-sm text-capitalize w-100 mb-3">To Go OR Delivery</a>
+              <a href="#" class="btn btn-secondary btn-sm text-uppercase w-100">Gift Cards</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="contentarea">
+    <div class="menubar-wrap">
+      <!-- Sub Menu -->
+      <section class="sub-menu-bar">
+        <div class="d-lg-flex align-items-center justify-content-between">
+          <div class="sub-menubar-list">
+            <ul>
+              <li><a href="#" class="active">Menu</a></li>
+              <li><a href="#">Guest Favorites</a></li>
+              <li><a href="#">Reorder</a></li>
+            </ul>
+          </div>
+          <div class="sub-menu-bar-right d-flex align-items-center">
+            <div class="order-from">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="flex-grow-1 ms-3 fw-bolder">
+                  <span>Ordering from</span>
+                </div>
+              </div>
+              <a href="#" class="link-tertiary fw-bold">NYC - Times Square</a>
+            </div>
+            <div class="order-type">
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="mx-3 fw-bolder">Order Type:</span>
+                <a href="#" class="link-tertiary fw-bold">Pickup</a>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Menu Navigation -->
+      <section class="menu-header">
+        <div class="container-fluid p-0">
+          <div class="row align-items-center g-0">
+            <div class="col-2 col-md-1 search-menu-items text-center">
+              <div class="">
+                <a class="text-dark" data-bs-toggle="modal" href="#searchModalToggle"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+            </div>
+            <div class="col-10 col-md-11">
+              <div class="menu-nav-list">
+                <div class="owl-carousel menuCarousel">
+                  <div class="item"><a href="#1">FAMILY-STYLE MEALS</a></div>
+                  <div class="item"><a href="#2">Appetizers</a></div>
+                  <div class="item"><a href="#3">Classic Entrées</a></div>
+                  <div class="item"><a href="#4">Amazing Alfredos!</a></div>
+                  <div class="item"><a href="#5">Soups, Salad & Breadsticks</a></div>
+                  <div class="item"><a href="#6">Create Your Own Pasta</a></div>
+                  <div class="item"><a href="#7">Lunch-Sized Favorites</a></div>
+                  <div class="item"><a href="#8">Desserts</a></div>
+                  <div class="item"><a href="#9">Non-Alcohodivc Beverages</a></div>
+                  <div class="item"><a href="#10">Gluten Sensitive</a></div>
+                  <div class="item"><a href="#11">Kids Meals - for children under 12</a></div>
+                  <div class="item"><a href="#12">Catering</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <div class="pullUpwrap">
+        <section id="1">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">FAMILY-STYLE MEALS</h1>
+              <h3 class="title-sm text-dark text-uppercase">FAMILY BUNDLES</h3>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-title text-center mb-5">
+              <h3 class="title-sm text-dark text-uppercase">Family-Size Pans (Serves 4-6)</h3>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="2">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Appetizers</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="3">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Classic Entrées</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="4">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Amazing Alfredos!</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="5">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Soups, Salad & Breadsticks</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="6">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Create Your Own Pasta</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="7">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Lunch-Sized Favorites</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="8">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Desserts</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="9">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Non-Alcohodivc Beverages</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="10">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Gluten Sensitive</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="11">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Kids Meals - for children under 12</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="12">
+          <div class="my-4">
+            <div class="section-title text-center mb-5">
+              <h1 class="title-md text-dark text-uppercase mb-3">Catering</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card section-menu-card mb-4">
+                  <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                    <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                    <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark">
+      <div class="join-subscribe bg-tertiary py-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="section-title mb-4 mb-lg-0 text-sm-start text-center">
+                <h3 class="title-sm fw-bold text-white mb-0">Join our eClub for news and offers!</h3>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <form class="row g-3 align-items-center">
+                <div class="col-sm-9">
+                  <div class="input-group bg-white rounded">
+                    <input type="text" class="form-control zipcode" placeholder="Zip Code">
+                    <input type="text" class="form-control" placeholder="Email Address">
+                  </div>
+                </div>
+                <div class="col-sm-3 text-sm-start text-center">
+                  <button type="submit" class="btn btn-outline-white text-uppercase btn-lg w-sm-auto w-100">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img class="footer-backdop-top" src="./assets/images/footer-backdrop-logo.svg" alt="">
+        <div class="footer-block">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-list">
+                <div class="section-title mb-4">
+                  <h4 class="title-sm text-white text-uppercase mb-0">ABOUT</h4>
+                </div>
+                <ul>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">About Fish in Flash</a></li>
+                  <li><a href="">Nutritional & Allergens</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Community</a></li>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">Press</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-list">
+                <div class="section-title mb-4">
+                  <h4 class="title-sm text-white text-uppercase mb-0">GIFT CARDS & OFFER</h4>
+                </div>
+                <ul>
+                  <li><a href="">Buy Gift Cards</a></li>
+                  <li><a href="">Check Gift Card Balances</a></li>
+                  <li><a href="">Specials</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-list">
+                <div class="section-title mb-4">
+                  <h4 class="title-sm text-white text-uppercase mb-0">ORDERING</h4>
+                </div>
+                <ul>
+                  <li><a href="">Order To Go</a></li>
+                  <li><a href="">My Account</a></li>
+                  <li><a href="">Lookup Order</a></li>
+                  <li><a href="">Order History</a></li>
+                  <li><a href="">Locations</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copy-right text-center">
+          <ul class="mb-2">
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Legal Notices</a></li>
+            <li><a href="#">Legal Notices</a></li>
+            <li><a href="#">Do Not Sell Data Request</a></li>
+            <li><a href="#">Accessibility Statement</a></li>
+          </ul>
+          <p class="text-white">© 2022 Fish in Flash, Inc. All rights reserved.</p>
+        </div>
+        <img class="footer-backdop-bottom" src="./assets/images/footer-backdrop-logo.svg" alt="">
+      </div>
+    </footer>
+  </main>
+
+  <!-- Search Modal -->
+  <div class="modal fade" id="searchModalToggle" tabindex="-1" aria-labelledby="searchModalFullscreenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content p-lg-5 p-3">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="search-menu mb-4">
+                <span class="searchmenu-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" name="search" class="form-control" placeholder="Search the menu">
+              </div>
+              <div class="section-title mb-4">
+                <h4 class="title-xs fw-bold mb-0">Suggested Searches</h4>
+              </div>
+              <div class="d-flex align-items-center flex-wrap">
+                <div class="suggested-search rounded-pill border border-1 py-2 px-3 me-3 mb-4">Chicken</div>
+                <div class="suggested-search rounded-pill border border-1 py-2 px-3 me-3 mb-4">Shrimp</div>
+                <div class="suggested-search rounded-pill border border-1 py-2 px-3 me-3 mb-4">Salad</div>
+                <div class="suggested-search rounded-pill border border-1 py-2 px-3 me-3 mb-4">Soup</div>
+                <div class="suggested-search rounded-pill border border-1 py-2 px-3 me-3 mb-4">Alfredo</div>
+                <div class="suggested-search rounded-pill border border-1 py-2 px-3 me-3 mb-4">Spaghetti</div>
+              </div>
+              <div class="section-title mb-4">
+                <h4 class="title-xs fw-bold mb-0">Menu Categories</h4>
+              </div>
+              <div class="menu-category-wrap">
+                <div class="menu-categories">
+                    <a href="#">Family-Style Meals</a>
+                    <a href="#">Amazing Alfredos!</a>
+                    <a href="#">Lunch-Sized Favorites</a>
+                    <a href="#">Gluten Sensitive</a>
+                    <a href="#">Appetizers</a>
+                    <a href="#">Soups, Salad & Breadsticks</a>
+                    <a href="#">Desserts</a>
+                    <a href="#">Kids Meals - for children under 12</a>
+                    <a href="#" class="active">Classic Entrées</a>
+                    <a href="#">Create Your Own Pasta</a>
+                    <a href="#">Non-Alcoholic Beverages</a>
+                    <a href="#">Catering</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <a id="backTotop" class="btn btn-tertiary"><i class="fa-solid fa-chevron-up"></i></a>
+  
+  <!-- SCRIPT -->
+  <script src="../src/assets/vendors/jquery/jquery.min.js"></script>
+  <script src="../src/assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="../src/assets/vendors/fontawesome/js/all.min.js" defer></script>
+  <script src="../src/assets/vendors/owl-carousel/js/owl.carousel.min.js" defer></script>
+  <script src="../src/assets/js/script.js" defer></script>
+</body>
+</html>

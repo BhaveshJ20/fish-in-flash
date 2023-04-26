@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish in a Flash</title>
+    <meta name="title" content="Fish in a Flash">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit">
+    <!-- FAVICON ICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#c0ca67">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Lato', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Catamaran', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <!-- font-family: 'Pinyon Script', cursive; -->
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../src/assets/vendors/bootstrap/css/bootstrap.min.css" defer />
+    <link rel="stylesheet" href="../src/assets/vendors/fontawesome/css/all.min.css" defer />
+    <link rel="stylesheet" href="../src/assets/css/common.css" defer />
+</head>
+<body>
+  <header class="fixed-top bg-white">
+    <!-- Mobile Menu -->
+    <div class="offcanvas-lg offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptions">
+        <!-- <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-label="Close"></button>
+        </div> -->
+        <div class="offcanvas-body d-block d-lg-none">
+          <ul class="navbar-nav d-flex flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order Now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../src/menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Join Wait List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find Restaurant</a>
+            </li>
+            <hr/>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Specials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Catering</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Join Eclub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gift Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <hr/>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Create an Account</a>
+            </li>
+            <li class="nav-item login-link">
+              <a class="nav-link" href="#">sign In</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <button class="hamberger-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+          <span class="hamberger-icon">
+          </span>
+        </button>
+        <a class="navbar-brand" href="../src/index.html"><img src="./assets/images/logo.svg" alt=""/></a>
+        <ul class="navbar-nav d-lg-flex flex-row me-auto d-none">
+          <li class="nav-item">
+            <a class="nav-link" href="../src/menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Order Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Join Wait List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-lg-flex flex-row d-none">
+          <li class="nav-item">
+            <div class="menu-location">
+              <a href="#" class="text-decoration-underline">NYC - TIMES SQUARE</a>
+              <p>(212) 333-3254</p>
+              <a href="#" class="">CHANGE LOCATION</a>
+            </div>
+          </li>
+          <li class="nav-item login-link">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+        <div class="cart-block d-flex">
+          <a href="#" class="location-icon d-block d-lg-none me-3"><i class="fa-solid fa-location-dot"></i></a>
+          <a href="#collapseCart" class="cart-icon" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseCart"><i class="fa-solid fa-bag-shopping"></i></a>
+          <div class="collapse cart-body" id="collapseCart">
+            <div class="">
+              <!-- <span id="cartClose" class="text-dark text-end"><i class="fa-solid fa-xmark"></i></span> -->
+              <h3 class="mb-3">Your cart is empty</h3>
+              <p class="mb-3">What type of order would you like to start?</p>
+              <a href="#" class="btn btn-primary btn-sm text-capitalize w-100 mb-3">To Go OR Delivery</a>
+              <a href="#" class="btn btn-secondary btn-sm text-uppercase w-100">Gift Cards</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="contentarea">
+    <!-- Sub Menu -->
+    <section class="sub-menu-bar">
+      <div class="d-lg-flex align-items-center justify-content-between">
+        <div class="sub-menubar-list">
+          <ul>
+            <li><a href="#" class="active">Menu</a></li>
+            <li><a href="#">Guest Favorites</a></li>
+            <li><a href="#">Reorder</a></li>
+          </ul>
+        </div>
+        <div class="sub-menu-bar-right d-flex align-items-center">
+          <div class="order-from">
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 fw-bolder">
+                <span>Ordering from</span>
+              </div>
+            </div>
+            <a href="#" class="link-tertiary fw-bold">NYC - Times Square</a>
+          </div>
+          <div class="order-type">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="mx-3 fw-bolder">Order Type:</span>
+              <a href="#" class="link-tertiary fw-bold">Pickup</a>
+            </div>             
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white breadcrumb-wrap">
+      <div class="container-fluid">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="menu.html">Back to Menu</a></li>
+            <li class="breadcrumb-item"><a href="#">FAMILY-STYLE MEALS</a></li>
+            <li class="breadcrumb-item active" aria-current="page">FAMILY-SIZE PANS (SERVES 4-6)</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="container-fluid bg-extralight g-0">
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <img src="../src/assets/images/family-style-meal1.jpg" class="card-img" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="product-details">
+            <div class="section-title mb-3">
+              <h1 class="title-md text-dark mb-3">Chicken Alfredo (Serves 4 - 6)</h1>
+              <h3 class="mb-0">$64.99</h3>
+            </div>
+            <div class="product-desc">
+              <p class="mb-4">Includes: A pan of sliced grilled chicken and fettuccine pasta with our signature homemade alfredo sauce.</p>
+              <p class="fw-bold">6,050 cal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="product-detail-acco theme-accordion">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Included with Your Order <span>(Required)</span>
+                    <small>Pan Alfredo Sauce</small>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body bg-extralight">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="accordion-list bg-white border-1 rounded mb-4">
+                          <div class="flex-shrink-0 align-self-stretch rounded-start">
+                            <div class="accordion-list-img">
+                              <span class="accordion-radio"><i class="fa-solid fa-check"></i></span>
+                              <img src="../src/assets/images/menuHighlight1.jpg" class="img-fluid rounded-start" width="100" alt="...">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 mx-3">
+                            Pan Alfredo Sauce
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Would You Like to Add a Beverage?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body bg-extralight">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="accordion-list bg-lighter border-1 rounded mb-4">
+                          <div class="flex-shrink-0 align-self-stretch rounded-start">
+                            <div class="accordion-list-img">
+                              <img src="../src/assets/images/menuHighlight2.jpg" class="img-fluid rounded-start" width="100" alt="...">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 mx-3">
+                            Pan Alfredo Sauce
+                            <b class="text-secondary text-uppercase d-block">Currently unavailable</b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="accordion-list bg-lighter border-1 rounded mb-4">
+                          <div class="flex-shrink-0 align-self-stretch rounded-start">
+                            <div class="accordion-list-img">
+                              <img src="../src/assets/images/menuHighlight2.jpg" class="img-fluid rounded-start" width="100" alt="...">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 mx-3">
+                            Pan Alfredo Sauce
+                            <b class="text-secondary text-uppercase d-block">Currently unavailable</b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="accordion-list bg-lighter border-1 rounded mb-4">
+                          <div class="flex-shrink-0 align-self-stretch rounded-start">
+                            <div class="accordion-list-img">
+                              <img src="../src/assets/images/menuHighlight2.jpg" class="img-fluid rounded-start" width="100" alt="...">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 mx-3">
+                            Pan Alfredo Sauce
+                            <b class="text-secondary text-uppercase d-block">Currently unavailable</b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="accordion-list bg-white border-1 rounded mb-4">
+                          <div class="flex-shrink-0 align-self-stretch rounded-start">
+                            <div class="accordion-list-img">
+                              <img src="../src/assets/images/menuHighlight2.jpg" class="img-fluid rounded-start" width="100" alt="...">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 mx-3">
+                            Pan Alfredo Sauce
+                            <b class="text-secondary text-uppercase d-block">Currently unavailable</b>
+                          </div>
+                          <div class="prod-list-price me-3">
+                            $6.29
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="accordion-list bg-white border-1 rounded mb-4">
+                          <div class="flex-shrink-0 bg-lighter align-self-stretch rounded-start">
+                            <div class="accordion-list-img">
+                              <img src="../src/assets/images/backdrop-logo-dark.svg" width="50" class="rounded-start" alt="">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 mx-3">
+                            Pan Alfredo Sauce
+                            <b class="text-secondary text-uppercase d-block">Currently unavailable</b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="accordion-list bg-white border-1 rounded mb-4">
+                          <div class="flex-shrink-0 bg-lighter align-self-stretch rounded-start">
+                            <div class="accordion-list-img">
+                              <img src="../src/assets/images/backdrop-logo-dark.svg" width="50" class="rounded-start" alt="">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 mx-3">
+                            Pan Alfredo Sauce
+                            <b class="text-secondary text-uppercase d-block">Currently unavailable</b>
+                          </div>
+                          <div class="prod-list-price me-3">
+                            $6.29
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Would You LIke to Add a Family-Sized Soup or Salad?
+                    <small>No, Thank You.</small>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body bg-extralight">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="accordion-list bg-white border-1 rounded mb-4">
+                          <div class="flex-shrink-0 align-self-stretch rounded-start">
+                            <div class="accordion-list-img">
+                              <img src="../src/assets/images/menuHighlight2.jpg" class="img-fluid rounded-start" width="100" alt="...">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 mx-3">
+                            Pan Alfredo Sauce
+                            <b class="text-secondary text-uppercase d-block">Currently unavailable</b>
+                          </div>
+                          <div class="prod-list-price me-3">
+                            $6.29
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="accordion-list bg-white border-1 rounded mb-4">
+                          <div class="flex-shrink-0 align-self-stretch rounded-start">
+                            <div class="accordion-list-img">
+                              <img src="../src/assets/images/menuHighlight2.jpg" class="img-fluid rounded-start" width="100" alt="...">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 mx-3">
+                            Pan Alfredo Sauce
+                            <b class="text-secondary text-uppercase d-block">Currently unavailable</b>
+                          </div>
+                          <div class="prod-list-price me-3">
+                            $6.29
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="accordion-list bg-white border-1 rounded mb-4">
+                          <div class="flex-shrink-0 bg-lighter align-self-stretch rounded-start">
+                            <div class="accordion-list-img">
+                              <span class="accordion-radio"><i class="fa-solid fa-check"></i></span>
+                              <img src="../src/assets/images/backdrop-logo-dark.svg" width="50" class="rounded-start" alt="">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 mx-3">
+                            No, Thank You.
+                          </div>
+                          <div class="prod-list-price me-3">
+                            $6.29
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="link-dark fw-bold">View Nutritional Info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr/>
+
+    <section class="container great-pairing-wrap">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="section-title mb-3">
+            <h3 class="title-xs text-black mb-3"><i class="fa-solid fa-file-invoice text-dark me-2"></i> Great pairings for this meal</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9 mb-5">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card section-menu-card mb-4">
+                <img src="../src/assets/images/family-style-meal3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                  <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                  <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card section-menu-card mb-4">
+                <img src="../src/assets/images/family-style-meal2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                  <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                  <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card section-menu-card mb-4">
+                <img src="../src/assets/images/family-style-meal4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title fw-bolder">Family Style Lasagna Bundle <span>(Serves 4-6)</span></h4>
+                  <p class="card-text mb-3">$66.99 <span class="fw-light">| 6,00 cal.</span></p>
+                  <div class="d-flex justify-content-end"><a href="#" class="btn btn-tertiary text-uppercase btn-md w-50">Add</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Product Detail ADD To Cart -->
+    <section class="prod-detail-addToCart bg-white">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-xl-3 col-lg-3">
+            <div class="item-search d-flex align-items-center mb-4 mb-lg-0">
+              <label class="item-search-lbl text-light">Item is for</label>
+              <input type="search" class="form-control" placeholder="Name (Optional)">
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-8 ms-lg-auto">
+            <div class="d-sm-flex align-items-center">
+              <div class="item-quantity d-flex align-items-center mb-4 mb-sm-0">
+                <p class="me-4">Quantity</p>
+                <div class="item-quantity-count d-flex align-items-center">
+                  <a href="#"><i class="fa-solid fa-chevron-left"></i></a><b>1</b><a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <div class="item-addToCart ms-sm-4">
+                <a href="#" class="btn btn-tertiary btn-lg d-block text-uppercase"><span>$64.99</span> | Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Back to top button -->
+  <a id="backTotop" class="btn btn-tertiary"><i class="fa-solid fa-chevron-up"></i></a>
+  
+  <!-- SCRIPT -->
+  <script src="../src/assets/vendors/jquery/jquery.min.js"></script>
+  <script src="../src/assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="../src/assets/vendors/fontawesome/js/all.min.js" defer></script>
+  <script src="../src/assets/js/script.js" defer></script>
+</body>
+</html>
